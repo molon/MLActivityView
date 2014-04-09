@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
                BuildableName = "MLActivityViewController.app"
-               BlueprintName = "MLActivityViewController"
-               ReferencedContainer = "container:MLActivityViewController.xcodeproj">
+               BlueprintName = "MLActivityView"
+               ReferencedContainer = "container:MLActivityView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362D7B0118EEAA97003F6D06"
                BuildableName = "MLActivityViewControllerTests.xctest"
-               BlueprintName = "MLActivityViewControllerTests"
-               ReferencedContainer = "container:MLActivityViewController.xcodeproj">
+               BlueprintName = "MLActivityViewTests"
+               ReferencedContainer = "container:MLActivityView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
             BuildableName = "MLActivityViewController.app"
-            BlueprintName = "MLActivityViewController"
-            ReferencedContainer = "container:MLActivityViewController.xcodeproj">
+            BlueprintName = "MLActivityView"
+            ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
             BuildableName = "MLActivityViewController.app"
-            BlueprintName = "MLActivityViewController"
-            ReferencedContainer = "container:MLActivityViewController.xcodeproj">
+            BlueprintName = "MLActivityView"
+            ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
             BuildableName = "MLActivityViewController.app"
-            BlueprintName = "MLActivityViewController"
-            ReferencedContainer = "container:MLActivityViewController.xcodeproj">
+            BlueprintName = "MLActivityView"
+            ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
