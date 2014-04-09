@@ -21,7 +21,6 @@
 		362D7B0618EEAA97003F6D06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362D7AE818EEAA97003F6D06 /* UIKit.framework */; };
 		362D7B0E18EEAA97003F6D06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 362D7B0C18EEAA97003F6D06 /* InfoPlist.strings */; };
 		362D7B1018EEAA97003F6D06 /* MLActivityViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362D7B0F18EEAA97003F6D06 /* MLActivityViewControllerTests.m */; };
-		3661AE4518EEAE870053DF6E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661ADFE18EEAE870053DF6E /* icon.png */; };
 		3661AE4618EEAE870053DF6E /* sns_icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661ADFF18EEAE870053DF6E /* sns_icon_1.png */; };
 		3661AE4718EEAE870053DF6E /* sns_icon_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661AE0018EEAE870053DF6E /* sns_icon_10.png */; };
 		3661AE4818EEAE870053DF6E /* sns_icon_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661AE0118EEAE870053DF6E /* sns_icon_10@2x.png */; };
@@ -98,7 +97,6 @@
 		3661AE9918EEB4A90053DF6E /* MLActivityViewBroadcastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3661AE9818EEB4A90053DF6E /* MLActivityViewBroadcastCell.m */; };
 		3661AEBA18F3DC630053DF6E /* MLActivityItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3661AEB918F3DC630053DF6E /* MLActivityItem.m */; };
 		3661AEBD18F3DED50053DF6E /* MLActivityElementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3661AEBC18F3DED50053DF6E /* MLActivityElementView.m */; };
-		3661AEC018F3FABE0053DF6E /* Action_Sheet_Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3661AEBF18F3FABE0053DF6E /* Action_Sheet_Background@2x.png */; };
 		3661AEC218F3FD5D0053DF6E /* IMG_0446.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3661AEC118F3FD5D0053DF6E /* IMG_0446.PNG */; };
 		3661AEC418F4D8CC0053DF6E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3661AEC318F4D8CC0053DF6E /* AssetsLibrary.framework */; };
 		3661AEC618F4E59A0053DF6E /* MLActivityView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3661AEC518F4E59A0053DF6E /* MLActivityView.bundle */; };
@@ -134,7 +132,6 @@
 		362D7B0B18EEAA97003F6D06 /* MLActivityViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLActivityViewTests-Info.plist"; sourceTree = "<group>"; };
 		362D7B0D18EEAA97003F6D06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		362D7B0F18EEAA97003F6D06 /* MLActivityViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLActivityViewControllerTests.m; sourceTree = "<group>"; };
-		3661ADFE18EEAE870053DF6E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3661ADFF18EEAE870053DF6E /* sns_icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sns_icon_1.png; sourceTree = "<group>"; };
 		3661AE0018EEAE870053DF6E /* sns_icon_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sns_icon_10.png; sourceTree = "<group>"; };
 		3661AE0118EEAE870053DF6E /* sns_icon_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns_icon_10@2x.png"; sourceTree = "<group>"; };
@@ -219,7 +216,6 @@
 		3661AEBB18F3DED50053DF6E /* MLActivityElementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLActivityElementView.h; sourceTree = "<group>"; };
 		3661AEBC18F3DED50053DF6E /* MLActivityElementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLActivityElementView.m; sourceTree = "<group>"; };
 		3661AEBE18F3ECC50053DF6E /* MLActivityDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLActivityDefine.h; sourceTree = "<group>"; };
-		3661AEBF18F3FABE0053DF6E /* Action_Sheet_Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Action_Sheet_Background@2x.png"; sourceTree = "<group>"; };
 		3661AEC118F3FD5D0053DF6E /* IMG_0446.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0446.PNG; sourceTree = "<group>"; };
 		3661AEC318F4D8CC0053DF6E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		3661AEC518F4E59A0053DF6E /* MLActivityView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MLActivityView.bundle; sourceTree = "<group>"; };
@@ -285,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				3661AEC118F3FD5D0053DF6E /* IMG_0446.PNG */,
-				3661AEBF18F3FABE0053DF6E /* Action_Sheet_Background@2x.png */,
 				3661AE9A18F396D00053DF6E /* Debug.h */,
 				3661AE9018EEB3E20053DF6E /* MLBroadcastView */,
 				3661AE8C18EEB18B0053DF6E /* MLActivityView */,
@@ -333,7 +328,6 @@
 		3661ADFD18EEAE870053DF6E /* Icon_7 */ = {
 			isa = PBXGroup;
 			children = (
-				3661ADFE18EEAE870053DF6E /* icon.png */,
 				3661ADFF18EEAE870053DF6E /* sns_icon_1.png */,
 				3661AE0018EEAE870053DF6E /* sns_icon_10.png */,
 				3661AE0118EEAE870053DF6E /* sns_icon_10@2x.png */,
@@ -543,7 +537,6 @@
 				3661AE6418EEAE870053DF6E /* sns_icon_23@2x.png in Resources */,
 				3661AE5518EEAE870053DF6E /* sns_icon_17.png in Resources */,
 				3661AE8B18EEAE870053DF6E /* sns_icon_9@2x.png in Resources */,
-				3661AE4518EEAE870053DF6E /* icon.png in Resources */,
 				3661AE8218EEAE870053DF6E /* sns_icon_5.png in Resources */,
 				3661AE6F18EEAE870053DF6E /* sns_icon_2@2x.png in Resources */,
 				362D7AFD18EEAA97003F6D06 /* Images.xcassets in Resources */,
@@ -558,7 +551,6 @@
 				362D7AEF18EEAA97003F6D06 /* InfoPlist.strings in Resources */,
 				3661AE8518EEAE870053DF6E /* sns_icon_6@2x.png in Resources */,
 				3661AE4818EEAE870053DF6E /* sns_icon_10@2x.png in Resources */,
-				3661AEC018F3FABE0053DF6E /* Action_Sheet_Background@2x.png in Resources */,
 				3661AE5918EEAE870053DF6E /* sns_icon_19.png in Resources */,
 				362D7AF818EEAA97003F6D06 /* Main.storyboard in Resources */,
 				3661AE5D18EEAE870053DF6E /* sns_icon_20.png in Resources */,
