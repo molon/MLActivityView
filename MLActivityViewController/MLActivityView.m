@@ -13,7 +13,7 @@
 #import "MLActivityDefine.h"
 
 
-#define kAnimateDuration 0.30f
+#define kAnimateDuration 0.25f
 #define kMaskBackOpacity 0.4f
 
 #define kBroadcastCellPadding 0.0f
