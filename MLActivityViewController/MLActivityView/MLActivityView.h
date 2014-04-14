@@ -12,6 +12,10 @@ typedef void (^MLActivityViewActionBlock)(BOOL isCancel,NSInteger clickedIndex);
 
 @interface MLActivityView : UIView
 
+@property (nonatomic,strong) UIColor *customBackgroundColor;
+@property (nonatomic,strong) UIImage *customCancelButtonImage;
+@property (nonatomic,strong) UIColor *customTextColor;
+
 - (id)initWithTitle:(NSString*)title andButtonTitles:(NSArray*)titles andButtonImages:(NSArray*)images andActionBlock:(MLActivityViewActionBlock)actionBlock;
 - (void)showInView:(UIView*)view;
 

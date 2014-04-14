@@ -75,13 +75,22 @@
             MLActivityItem *item = [[MLActivityItem alloc]init];
             item.index = i;
             item.title = titles[i];
-            item.image = images[i];
+            if([images[i] isKindOfClass:[NSString class]]){
+                item.image = [UIImage imageNamed:images[i]];
+            }else{
+                item.image = images[i];
+            }
             [items addObject:item];
         }
         self.items = items;
         
     }
     return self;
+}
+
+- (void)dealloc
+{
+//    DLOG(@"MLActivityView dealloc");
 }
 
 - (void)showInView:(UIView*)view
@@ -160,6 +169,9 @@
     if (!_mainView){
         _mainView = [[UIView alloc]init];
         
+        if(self.customBackgroundColor){
+            _mainView.backgroundColor = self.customBackgroundColor;
+        }
         [self addSubview:_mainView];
     }
     return _mainView;
@@ -167,6 +179,9 @@
 
 - (UIImageView*)backgroundImageView
 {
+    if (self.customBackgroundColor) {
+        return nil;
+    }
     if (!_backgroundImageView){
         _backgroundImageView = [[UIImageView alloc]initWithImage:[[UIImage imageNamed:kSrcName(@"background")] stretchableImageWithLeftCapWidth:0.0f topCapHeight:7.0f]];
         _backgroundImageView.backgroundColor = [UIColor clearColor];
@@ -183,12 +198,18 @@
         _titleLabel.numberOfLines = 1;
         _titleLabel.backgroundColor = [UIColor clearColor];
         _titleLabel.text = self.title;
-        _titleLabel.textColor = [UIColor whiteColor];
+        
 //        _titleLabel.backgroundColor = [UIColor greenColor];
         
         _titleLabel.font = [UIFont boldSystemFontOfSize:17.0f];
-        _titleLabel.shadowColor = [UIColor blackColor];
-        _titleLabel.shadowOffset = kShadowOffset;
+        
+        if (self.customTextColor) {
+            _titleLabel.textColor = self.customTextColor;
+        }else{
+            _titleLabel.textColor = [UIColor whiteColor];
+            _titleLabel.shadowColor = [UIColor blackColor];
+            _titleLabel.shadowOffset = kShadowOffset;
+        }
         
         [self.mainView addSubview:_titleLabel];
     }
@@ -224,10 +245,11 @@
 {
     if (!_cancelButton) {
         _cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _cancelButton.layer.cornerRadius = 5.0f;
-        [_cancelButton setBackgroundImage:[self imageWithPureColor:kCancelButtonBackgroundColor] forState:UIControlStateNormal];
         _cancelButton.exclusiveTouch = YES;
+        
+        _cancelButton.layer.cornerRadius = 5.0f;
         _cancelButton.clipsToBounds = YES;
+        
         [_cancelButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
         [_cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
@@ -235,6 +257,12 @@
         _cancelButton.titleLabel.font = [UIFont boldSystemFontOfSize:19.0f];
         _cancelButton.titleLabel.shadowColor = [UIColor blackColor];
         _cancelButton.titleLabel.shadowOffset = kShadowOffset;
+        
+        if (self.customCancelButtonImage) {
+            [_cancelButton setBackgroundImage:self.customCancelButtonImage forState:UIControlStateNormal];
+        }else{
+            [_cancelButton setBackgroundImage:[self imageWithPureColor:kCancelButtonBackgroundColor] forState:UIControlStateNormal];
+        }
         
         [self.mainView addSubview:_cancelButton];
     }
@@ -250,6 +278,16 @@
     
 }
 
+- (void)setCustomTextColor:(UIColor *)customTextColor
+{
+    _customTextColor = customTextColor;
+    
+    if (customTextColor) {
+        for (MLActivityItem *item in self.items) {
+            item.customTextColor = customTextColor;
+        }
+    }
+}
 #pragma mark - tap event
 - (void)tapMaskBackground
 {
@@ -348,7 +386,11 @@
     [self.broadcastView reloadData]; //可能修改了broadcastCellCount和maxElementCountOfCell，例如在转屏的情况下，这里需要重新刷新下。
     
     //pageControl
-    self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(self.broadcastView.frame), contentWidth, kPageControlHeight);
+    if (self.broadcastCellCount<=1) { //就一页的话就是0高度
+        self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(self.broadcastView.frame), contentWidth, 0);
+    }else{
+        self.pageControl.frame = CGRectMake(0, CGRectGetMaxY(self.broadcastView.frame), contentWidth, kPageControlHeight);
+    }
     
     //cancelButton
     self.cancelButton.frame = CGRectMake(kCancelButtonHMargin, CGRectGetMaxY(self.pageControl.frame)+kCancelButtonTopMargin, contentWidth-kCancelButtonHMargin*2, kCancelButtonHeight);

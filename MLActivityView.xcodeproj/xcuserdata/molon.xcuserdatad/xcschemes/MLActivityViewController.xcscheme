@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
-               BuildableName = "MLActivityViewController.app"
+               BuildableName = "MLActivityView.app"
                BlueprintName = "MLActivityView"
                ReferencedContainer = "container:MLActivityView.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "362D7B0118EEAA97003F6D06"
-               BuildableName = "MLActivityViewControllerTests.xctest"
+               BuildableName = "MLActivityViewTests.xctest"
                BlueprintName = "MLActivityViewTests"
                ReferencedContainer = "container:MLActivityView.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
-            BuildableName = "MLActivityViewController.app"
+            BuildableName = "MLActivityView.app"
             BlueprintName = "MLActivityView"
             ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
-            BuildableName = "MLActivityViewController.app"
+            BuildableName = "MLActivityView.app"
             BlueprintName = "MLActivityView"
             ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "362D7AE018EEAA97003F6D06"
-            BuildableName = "MLActivityViewController.app"
+            BuildableName = "MLActivityView.app"
             BlueprintName = "MLActivityView"
             ReferencedContainer = "container:MLActivityView.xcodeproj">
          </BuildableReference>

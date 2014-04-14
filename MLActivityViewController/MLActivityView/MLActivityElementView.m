@@ -49,7 +49,9 @@
         _button.clipsToBounds = YES;
         _button.exclusiveTouch = YES;
         
-        _button.layer.cornerRadius = 10.0f;
+        _button.layer.cornerRadius = 5.0f;
+        _button.layer.shadowColor = [UIColor blackColor].CGColor;
+        _button.layer.shadowOffset = kShadowOffset;
         
         
         [_button addTarget:self action:@selector(buttonEvent:) forControlEvents:UIControlEventTouchUpInside];
@@ -83,6 +85,11 @@
     
     [self.button setImage:item.image forState:UIControlStateNormal];
     self.titleLabel.text = item.title;
+    if (item.customTextColor) {
+        self.titleLabel.textColor = item.customTextColor;
+        self.titleLabel.shadowColor = [UIColor clearColor];
+        self.titleLabel.shadowOffset = CGSizeZero;
+    }
     [self setNeedsLayout];
 }
 

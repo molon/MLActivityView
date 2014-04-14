@@ -13,5 +13,6 @@
 @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,assign) NSUInteger index;
+@property (nonatomic,strong) UIColor *customTextColor;
 
 @end
